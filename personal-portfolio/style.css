@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body & Font */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: #ffffff;
+    font-size: 1.8rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links a.active,
+  .nav-links a:hover {
+    background: #007acc;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #e8f0fe;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  
+  .hero h2 span {
+    color: #007acc;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #005f99;
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background: #1e1e1e;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: -100%;
+      transition: 0.3s;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .navbar h1 {
+      flex: 1;
+    }
+  
+    .nav-links.show {
+      left: 0;
+    }
+  
+    .nav-links li {
+      margin: 1rem 0;
+    }
+  }
+  
+  /* Smaller Devices */
+  @media (max-width: 480px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

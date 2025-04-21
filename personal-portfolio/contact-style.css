@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+/* Contact Info Styling */
+.contact-info {
+    padding: 3rem 1rem;
+    background: #ffffff;
+    text-align: center;
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 2rem;
+    color: #007acc;
+    font-size: 2.5rem;
+  }
+  
+  .contact-info p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .contact-info a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background: #1e1e1e;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: -100%;
+      transition: 0.3s;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .navbar h1 {
+      flex: 1;
+    }
+  
+    .nav-links.show {
+      left: 0;
+    }
+  
+    .nav-links li {
+      margin: 1rem 0;
+    }
+  }
+  
+  /* Smaller Devices */
+  @media (max-width: 480px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
